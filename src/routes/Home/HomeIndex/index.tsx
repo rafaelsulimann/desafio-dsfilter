@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import FilterCard from "../../../components/FilterCard";
 import ListingProductsCard from "../../../components/ListingProductsCard";
 import { ProductDTO } from "../../../models/product";
-import * as productService from '../../../services/product-service'
+import * as productService from '../../../services/product-service';
+import './styles.scss';
 
 export default function HomeIndex() {
 

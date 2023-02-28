@@ -1,8 +1,42 @@
 .filter-card-container {
+    padding-top: 20px;
+    margin-bottom: 20px;
     .filter-card {
+        min-height: 200px;
+        background-color: var(--white-color);
+        border-radius: 5px;
+        padding: 20px;
         .filter-card-input {
             label {
                 display: none;
+            }
+            input {
+                height: 40px;
+                width: 200px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                border: 1px solid var(--gray-color);
+                padding: 10px;
+            }
+            :focus {
+                outline: none;
+            }
+            ::placeholder {
+                color: var(--gray-color);
+            }
+        }
+        .filter-card-button-submit {
+            button {
+                background-color: var(--green-color);
+                color: var(--white-color);
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 18.75px;
+                border: none;
+                border-radius: 5px;
+                width: 200px;
+                height: 40px;
+                cursor: pointer;
             }
         }
     }

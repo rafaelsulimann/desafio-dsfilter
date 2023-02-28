@@ -1,5 +1,6 @@
 import { ProductDTO } from "../../models/product";
 import ProductCard from "../ProductCard";
+import './styles.scss';
 
 type Props ={
     products: ProductDTO[];

@@ -16,8 +16,21 @@ header {
     min-height: 70px;
     background-color: var(--green-color);
     color: var(--white-color);
+    @media(max-width: 960px) {
+        padding: 0px 20px;
+    }
 }
 
 main {
-    background-color: var(--black-color);
+    background-color: var(--gray-color);
+    min-height: 90.2vh;
+    @media(max-width: 960px) {
+        padding: 0px 20px;
+    }
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    width: 100%;
 }
