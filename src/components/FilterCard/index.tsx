@@ -34,7 +34,7 @@ export default function FilterCard({ onFilter }: Props) {
           <label htmlFor="minValue">Preço mínimo</label>
           <input
             id="minValue"
-            value={formData.minValue}
+            value={formData.minValue || ""}
             name="minValue"
             type="text"
             placeholder="Preço mínimo"
@@ -46,7 +46,7 @@ export default function FilterCard({ onFilter }: Props) {
           <input
             id="maxValue"
             name="maxValue"
-            value={formData.maxValue}
+            value={formData.maxValue || ""}
             type="text"
             placeholder="Preço máximo"
             onChange={handleChange}
