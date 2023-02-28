@@ -1,0 +1,23 @@
+:root {
+    --green-color: #55BC04;
+    --white-color: #fff;
+    --gray-color: #C2C2C2;
+    --black-color: #6F6F6F;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    min-height: 70px;
+    background-color: var(--green-color);
+    color: var(--white-color);
+}
+
+main {
+    background-color: var(--black-color);
+}
