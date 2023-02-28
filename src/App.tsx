@@ -1,11 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './routes/Home'
+import HomeIndex from './routes/Home/HomeIndex'
 
-function App() {
+export default function App() {
 
   return (
-    <h1>Olá mundo</h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />}>
+          <Route index element={<HomeIndex />}/>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
-export default App
